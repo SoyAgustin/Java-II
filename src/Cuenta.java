@@ -3,7 +3,7 @@ class Cuenta {
 	double saldo;
 	int agencia;
 	int numero;
-	String titular;
+	Cliente titular;
 	
 	//métodos: toda secuencia de pasos para realizar alguna accion
 	
