@@ -3,7 +3,7 @@ class Cuenta {
 	double saldo;
 	int agencia;
 	int numero;
-	Cliente titular;
+	Cliente titular = new Cliente(); //es un tipo cliente, ya contiene los atributos de un cliente
 	
 	//métodos: toda secuencia de pasos para realizar alguna accion
 	
