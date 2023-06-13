@@ -14,5 +14,10 @@ public class CrearCuenta {
 	Cuenta segundaCuenta = new Cuenta();
 	segundaCuenta.saldo = 500;
 	System.out.println(segundaCuenta.saldo);
+	
+	System.out.println(primeraCuenta); // Son diferentes las direcciones de memoria de las dos cuentas
+	System.out.println(segundaCuenta);
+	
+	
  }
 }
