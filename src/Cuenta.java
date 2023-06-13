@@ -11,7 +11,8 @@ class Cuenta {
 	//Los métodos que retornan valor 
 	
 	//public al inicio del método tiene una funcionalidad que se verá después, para nosotros funciona bien sin "public"
-	public void depositar(double valor){
-		saldo += valor;
+	public void depositar(double saldo){
+		this.saldo =  this.saldo + saldo;
+		//this sirve para hacer referencia al atributo y diferenciarlo del parámetro del método.
 	}
 }
