@@ -1,9 +1,9 @@
 
 class Cuenta {
 	private double saldo; //con private no se puede modificar directamente fuera de la clase (este archivo) a esto se le llama encapsulamiento.
-	int agencia;
-	int numero;
-	Cliente titular = new Cliente(); //es un tipo cliente, ya contiene los atributos de un cliente
+	private int agencia;
+	private int numero;
+	private Cliente titular = new Cliente(); //es un tipo cliente, ya contiene los atributos de un cliente
 	
 	//métodos: toda secuencia de pasos para realizar alguna accion
 	
@@ -36,4 +36,34 @@ class Cuenta {
 			return false;
 		}
 	}
+	
+	public double getSaldo() { //verbo onbtener en ingles por convención
+		return this.saldo;
+	}
+	
+	public void setAgencia(int agencia){
+		if (agencia>=0) {
+			this.agencia= agencia;
+		}
+	}
+	
+	public int getAgencia() {
+		return agencia;
+	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	public int getNumero() {
+		return numero;
+	}
+	
 }

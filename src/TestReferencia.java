@@ -6,14 +6,14 @@
 public class TestReferencia {
 	public static void main(String[] args) {
 		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.saldo = 200;
-		System.out.println("saldo primera cuenta "+primeraCuenta.saldo);
+		primeraCuenta.depositar(200);;
+		System.out.println("saldo primera cuenta "+primeraCuenta.getSaldo());
 		
 		Cuenta segundaCuenta = primeraCuenta;
-		segundaCuenta.saldo = 100;
+		segundaCuenta.depositar(200);;
 		
-		System.out.println("saldo segunda cuenta " + segundaCuenta.saldo);
-		System.out.println("saldo primera cuenta depues de modificar " + segundaCuenta.saldo);
+		System.out.println("saldo segunda cuenta " + segundaCuenta.getSaldo());
+		System.out.println("saldo primera cuenta depues de modificar " + segundaCuenta.getSaldo());
 		//Si se aumenta el 400 el valor del saldo de la segunda cuenta tambien cambia el de la primera por la misma razón.
 		
 		//Se puede imprimir la ubicacion en la memoria y verificar que tien el mismo valor 

@@ -16,8 +16,8 @@ public class TestReferencia3 {
 		
 		//La segunda forma es directamente crear cliente dentro del atributo titular de la clase cuentaDiego
 		
-		cuentaDiego.titular = new Cliente();
-		cuentaDiego.titular.nombre = "Diego";
-		System.out.println(cuentaDiego.titular.nombre);
+		cuentaDiego.setTitular(new Cliente());
+		
+		System.out.println(cuentaDiego.getTitular().getNombre());
 	}
 }
