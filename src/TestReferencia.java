@@ -5,7 +5,7 @@
 //modificar el valor saldo de segundaCuenta
 public class TestReferencia {
 	public static void main(String[] args) {
-		Cuenta primeraCuenta = new Cuenta();
+		Cuenta primeraCuenta = new Cuenta(33);
 		primeraCuenta.depositar(200);;
 		System.out.println("saldo primera cuenta "+primeraCuenta.getSaldo());
 		

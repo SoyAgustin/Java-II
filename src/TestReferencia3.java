@@ -1,7 +1,7 @@
 
 public class TestReferencia3 {
 	public static void main(String[] args) {
-		Cuenta cuentaDiego = new Cuenta();
+		Cuenta cuentaDiego = new Cuenta(33);
 		
 		//cuentaDiego.titular.nombre = "Diego"; lanza un error Exception
 		//esto pasa porque no está inicializado el objeto cliente (titular)

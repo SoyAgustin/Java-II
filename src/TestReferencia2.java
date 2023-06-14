@@ -9,7 +9,7 @@ public class TestReferencia2 {
 		diego.setTelefono("999922562");
 		
 		//Creamos una cuenta
-		Cuenta cuentaDiego = new Cuenta();
+		Cuenta cuentaDiego = new Cuenta(33);
 		cuentaDiego.setAgencia(1);;
 		cuentaDiego.setTitular(diego);; // Aquí es donde se hace la referencia al cliente llamado diego
 		//Están "vinculadas" a través de la referencia.

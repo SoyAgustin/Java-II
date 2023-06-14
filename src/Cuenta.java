@@ -12,6 +12,20 @@ class Cuenta {
 	
 	//public al inicio del método tiene una funcionalidad que se verá después, para nosotros funciona bien sin "public"
 	
+	//El codigo siguiente es un constructor, se pueden inicializar atributos desde que se crean en el código fuera de aqui
+	
+	
+	private static int total=0; //no pertenece a la instancia, sino a la clse
+	public Cuenta(int agencia) {
+		if(agencia <= 0) {
+			System.out.println("No se permite 0");
+			this.agencia = 1;
+		}
+		this.agencia = agencia;
+		total++;
+		System.out.println("Cuentas totales = "+total);
+	}
+	
 	public void depositar(double saldo){
 		this.saldo =  this.saldo + saldo;
 		
@@ -44,6 +58,8 @@ class Cuenta {
 	public void setAgencia(int agencia){
 		if (agencia>=0) {
 			this.agencia= agencia;
+		}else {
+			System.out.println("No están permitidos valores negativos");
 		}
 	}
 	
@@ -64,6 +80,9 @@ class Cuenta {
 	}
 	public int getNumero() {
 		return numero;
+	}
+	public static int getTotal() {
+		return total;
 	}
 	
 }
