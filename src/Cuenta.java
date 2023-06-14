@@ -1,6 +1,6 @@
 
 class Cuenta {
-	double saldo;
+	private double saldo; //con private no se puede modificar directamente fuera de la clase (este archivo) a esto se le llama encapsulamiento.
 	int agencia;
 	int numero;
 	Cliente titular = new Cliente(); //es un tipo cliente, ya contiene los atributos de un cliente
